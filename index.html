@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta charset="utf-8">
- <title>Home page</title>
+ <title>Let's be roomies!</title>
 </head>
 <body>
  <button>Get data</button>
@@ -17,7 +17,9 @@
         url : '/users',
         method : 'GET',
         success : function(data){
-           console.log(data);
+           data.users.forEach(user => {
+             console.log(user.name);
+           });
         },
       
         error: function(err){

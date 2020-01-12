@@ -1,6 +1,6 @@
 const express = require('express'),
       server = express(),
-      users = require('../FindRoomates/user');
+      users = require('../FindRoommates/user');
 
 //setting the port.
 server.set('port', process.env.PORT || 3000);
